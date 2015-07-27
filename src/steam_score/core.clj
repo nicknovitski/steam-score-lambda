@@ -1,4 +1,6 @@
-(ns steam-score.core)
+(ns steam-score.core
+    (:require [amazonica.aws.kinesis :refer [put-records]]
+              [amazonica.aws.s3 :refer [get-object]]))
 
 (defn handle-event
     [event]
