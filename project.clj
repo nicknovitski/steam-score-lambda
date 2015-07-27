@@ -11,4 +11,4 @@
   :main ^:skip-aot steam-score.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}
-             })
+             :test {:aot [steam-score.lambda]}})
