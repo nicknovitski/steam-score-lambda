@@ -8,5 +8,6 @@
                  [amazonica "0.3.29"]]
   :main ^:skip-aot steam-score.core
   :target-path "target/%s"
+  :uberjar-name "steam-score-lambda.jar"
   :profiles {:uberjar {:aot :all}
              :test {:aot [steam-score.lambda]}})
